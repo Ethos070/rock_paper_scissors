@@ -5,7 +5,7 @@ function getRandomInt(max){
 
 function getComputerChoice(){
     //generate a number from 0 to 2 (0, 1, 2)
-    randomNumber = getRandomInt(3);
+    let randomNumber = getRandomInt(3);
     if(randomNumber === 0){
         return "rock";
     }
@@ -16,3 +16,12 @@ function getComputerChoice(){
         return 'scissors';
     }
 }
+
+function getHumanChoice(){
+    const message = 'Write "Rock", "Paper" or "Scissors".'
+    let choice = prompt(message);
+    return choice;
+}
+
+let humanScore = 0;
+let computerScore = 0;
